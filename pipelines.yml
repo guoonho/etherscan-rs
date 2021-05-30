@@ -8,6 +8,7 @@ stages:
     - agent.os -equals Linux
     - agent.osarchitecture -equals ARM
     - cargo
-
-  steps:
-  - script: cargo build
+  jobs:
+  - job: build
+    steps:
+    - script: cargo build
