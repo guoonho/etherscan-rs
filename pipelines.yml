@@ -12,4 +12,4 @@ stages:
   jobs:
   - job: build
     steps:
-    - bash: cargo build
+    - bash: /root/.cargo/bin/cargo build
