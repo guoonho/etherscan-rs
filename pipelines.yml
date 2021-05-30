@@ -4,6 +4,7 @@ stages:
 - stage: buildArm
   displayName: Build for Arm32
   pool:
+    name: Default
     demands:
     - agent.os -equals Linux
     - agent.osarchitecture -equals ARM
