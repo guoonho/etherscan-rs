@@ -1,0 +1,13 @@
+name: $(Date:yyyyMMdd)$(Rev:.r)
+stages:
+
+- stage: buildArm
+  displayName: Build for Arm32
+  pool:
+    demands:
+    - agent.os -equals Linux
+    - agent.osarchitecture -equals ARM
+    - cargo
+
+  steps:
+  - script: cargo build
