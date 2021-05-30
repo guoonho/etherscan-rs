@@ -12,4 +12,4 @@ stages:
   jobs:
   - job: build
     steps:
-    - script: cargo build
+    - bash: cargo build
